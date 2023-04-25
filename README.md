@@ -24,4 +24,4 @@ Tüm endpointler için Headerda 'Bearer {token}' þeklinde token bilgisi gerekmekte
 Örnek Model-> Örnek Model-> {"id":1, "name": "Mert", "surname": "Savaþ", "age": 24}\
 `/api/employee/{id}"` [DELETE]-> Çalýþanýmýzý siliyoruz.
 
-Token ile güvenliði geçtikten sonra servislerimizi bu tokenýn içindeki claimslerde yer alan policy bilgileri ile korumaya çalýþtýk. Bu policiyler read, write, delete olmak üzere 3 adettir. Token üretilirken bu policy claimleri belirtilmektedir.
+Token ile güvenliði geçtikten sonra servislerimizi bu tokenýn içindeki claimslerde yer alan policy bilgileri ile korumaya çalýþtýk. Bu policiyler read, write, delete olmak üzere 3 adettir. Token üretilirken bu policy claimleri belirtilmektedir. Eðer client yaratýlýrken scope olarak delete almamýþsa daha sonra delete iþlemi yapamaz.
