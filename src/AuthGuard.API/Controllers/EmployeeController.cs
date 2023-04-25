@@ -68,7 +68,7 @@ namespace AuthGuard.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize("DPolicy")]
+        [Authorize("CPolicy")]
         public async Task<IActionResult> Delete(int id)
         {
             var employee = await _employee.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);

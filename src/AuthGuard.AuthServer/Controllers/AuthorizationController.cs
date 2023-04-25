@@ -41,7 +41,6 @@ namespace AuthGuard.AuthServer.Controllers
                 //Destination'lar ile claim'lerin hangi token'a ekleneceğini belirtiyoruz. AccessToken mı? Identity Token mı? Yoksa her ikisi de mi?
                 identity.AddClaim(Claims.Subject, (await _applicationManager.GetClientIdAsync(application) ?? throw new InvalidOperationException()), Destinations.AccessToken, Destinations.IdentityToken);
                 identity.AddClaim(Claims.Name, (await _applicationManager.GetDisplayNameAsync(application) ?? throw new InvalidOperationException()), Destinations.AccessToken, Destinations.IdentityToken);
-                identity.AddClaim("custom-claim", "custom-claim-value", Destinations.AccessToken, Destinations.IdentityToken);
 
                 identity.AddClaim(JwtRegisteredClaimNames.Aud, "AuthGuard", Destinations.AccessToken, Destinations.IdentityToken);
 

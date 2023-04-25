@@ -4,7 +4,7 @@ using OpenIddict.Abstractions;
 
 namespace AuthGuard.AuthServer.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ClientController : ControllerBase
     {
