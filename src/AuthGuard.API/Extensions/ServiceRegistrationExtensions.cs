@@ -48,7 +48,7 @@ namespace AuthGuard.API.Extensions
             {
                 options.AddPolicy("APolicy", policy => policy.RequireClaim("scope", "read"));
                 options.AddPolicy("BPolicy", policy => policy.RequireClaim("scope", "write"));
-                options.AddPolicy("CPolicy", policy => policy.RequireClaim("scope", "read", "write"));
+                options.AddPolicy("CPolicy", policy => policy.RequireClaim("scope", "delete"));
             });
         }
 

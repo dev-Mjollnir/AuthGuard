@@ -36,7 +36,7 @@ namespace AuthGuard.AuthServer.Extensions
                        //EnableTokenEndpointPassthrough : OpenID Connect request'lerinin OpenIddict tarafından işlenmesi için gerekli konfigürasyonu sağlar.
                        .EnableTokenEndpointPassthrough();
                 //Yetkileri(scope) belirliyoruz.
-                options.RegisterScopes("read", "write");
+                options.RegisterScopes("read", "write", "delete");
             });
         }
 

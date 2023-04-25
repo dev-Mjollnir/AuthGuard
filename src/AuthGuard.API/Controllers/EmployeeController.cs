@@ -51,9 +51,10 @@ namespace AuthGuard.API.Controllers
         }
 
         [HttpPut]
-        [Authorize("CPolicy")]
+        [Authorize("BPolicy")]
         public async Task<IActionResult> Update(Employee employee)
         {
+            var x = HttpContext.User.Claims;
             var result = await _employee.AsNoTracking().FirstOrDefaultAsync(x => x.Id == employee.Id);
             if (result is null)
                 return NotFound(result);

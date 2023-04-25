@@ -31,7 +31,9 @@ namespace AuthGuard.AuthServer.Controllers
                     OpenIddictConstants.Permissions.Endpoints.Token,
                     OpenIddictConstants.Permissions.GrantTypes.ClientCredentials,
                     OpenIddictConstants.Permissions.Prefixes.Scope + "read",
-                    OpenIddictConstants.Permissions.Prefixes.Scope + "write"
+                    OpenIddictConstants.Permissions.Prefixes.Scope + "write",
+                    OpenIddictConstants.Permissions.Prefixes.Scope + "delete",
+
                 }
                 });
                 return Ok();
