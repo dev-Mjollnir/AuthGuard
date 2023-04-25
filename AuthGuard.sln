@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthGuard.AuthServer", "src\AuthGuard.AuthServer\AuthGuard.AuthServer.csproj", "{175E9CEF-4B79-4CC4-A7AE-FBFE48E144EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthGuard.API", "src\AuthGuard.API\AuthGuard.API.csproj", "{983EE5CB-2B22-4B53-9054-301281A14879}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175E9CEF-4B79-4CC4-A7AE-FBFE48E144EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175E9CEF-4B79-4CC4-A7AE-FBFE48E144EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175E9CEF-4B79-4CC4-A7AE-FBFE48E144EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175E9CEF-4B79-4CC4-A7AE-FBFE48E144EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983EE5CB-2B22-4B53-9054-301281A14879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983EE5CB-2B22-4B53-9054-301281A14879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983EE5CB-2B22-4B53-9054-301281A14879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983EE5CB-2B22-4B53-9054-301281A14879}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DFB0EBC-2D1B-48C7-89F1-76995FB82E9F}
+	EndGlobalSection
+EndGlobal
